@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Introdução Do Sass</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+   <!-- <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>  -->
+
+  <!-- hover: color :#0d6efd -->
+</head>
+<body>
+
+<div class="p-5 bg-primary text-white text-center">
+  <h1>Tudo Sobre Sass</h1>
+  <p>colocar uma animação</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">HTML</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">BOOTSTRAP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CANVAS</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Tudo Sobre Sass</h2>
+      <h5>O que é o Sass</h5>
+        <div class="fakeimg">
+          1) Sass significa S-yntactically A-wesome S-tyle S-heet; <br>
+          2) Sass é uma extensão do CSS; <br>
+          3) Sass é um pré-processador CSS é totalmente compatível com todas as versões de CSS; <br>
+          4) Sass reduz a repetição de CSS e, portanto, economiza tempo. projetado por Hampton Catlin e desenvolvido por Natalie Weizenbaum em 2006; <br>
+          5) Sass é grátis para baixar e usar.
+        </div>
+     
+      <h3 class="mt-4">Ferramentas Front-and</h3>
+      <p>Ferramentas JavaScript </p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">AngularJS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">JQuery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">AJAX</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">React</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2>Como funciona o Sass?</h2>
+      <h5>Tipo de arquivo Sass</h5>
+      <div class="fakeimg">Aqui vai uma Image</div> <br>
+      
+      <p>Um navegador não entende o código Sass. Portanto, você precisará de um pré-processador Sass para converter o código Sass em CSS padrão..</p>
+
+      <p> Este processo é denominado transpilar. Portanto, você precisa fornecer a um transpiler (algum tipo de programa) algum código Sass e, em seguida, obter algum código CSS de volta.</p>
+
+      <p>Os arquivos Sass têm a extensão de arquivo ".scss".</p>
+
+      <h2>Instalação Sass</h2>
+      <h5>Requisitos do sistema para Sass</h5>
+      
+      <p>
+        Sistema operacional - Sass é independente de plataforma; <br>
+        Suporte ao navegador - Sass funciona em Edge / IE (a partir do IE 8), Firefox, Chrome, Safari, Opera;<br>
+        Linguagem de programação - Sass é baseado em Ruby.
+      </p>
+
+      <h5>Instale Sass</h5>
+
+      <p>
+        Existem várias maneiras de instalar o Sass em seu sistema. Existem muitos aplicativos que o colocarão em funcionamento com o Sass em poucos minutos para Mac, Windows e Linux. Alguns deles são gratuitos, mas alguns são aplicativos pagos.
+
+        Você pode ler mais sobre eles aqui: sass-lang.com/install
+      </p>
+
+    
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+          <h2>Variáveis ​​Sass</h2>
+
+          <p>Variáveis ​​são uma forma de armazenar informações que você pode reutilizar mais tarde. Com o Sass, você pode armazenar informações em variáveis, como:</p>
+
+          <p>
+            strings; <br>
+            numbers; <br>
+            colors; <br>
+            booleans; <br>
+            lists; <br>
+            nulls.
+          </p>
+
+          <p>Sass usa o símbolo $, seguido por um nome, para declarar variáveis:</p>
+          Exemplo: $variablename: value;
+        </div>
+
+        <div class="col-sm-8">
+            <h2>Regras e propriedades aninhadas de Sass</h2>
+            <h5>Regras Sass Aninhadas</h5>
+
+            <p>
+                O Sass permite que você aninhe seletores CSS da mesma forma que o HTML, praticamente automático, diferente do CSS que as regras são definidas uma a uma (não aninhadas).
+            </p>
+
+            <h5>Propriedades Sass Aninhadas</h5>
+
+            <p>
+                Muitas propriedades CSS têm o mesmo prefixo, como font-family, font-size e font-weight ou text-align, text-transform e text-overflow.
+
+                Com Sass, você pode escrevê-los como propriedades aninhadas.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="padding-top:15px">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Sass @import and Partials</h2>
+            <p>
+                Sass mantém o código CSS DRY (Don't Repeat Yourself). Uma maneira de escrever código DRY é manter o código relacionado em arquivos separados. <br> <br>
+
+                Você pode criar pequenos arquivos com fragmentos CSS para incluir em outros arquivos Sass. Exemplos de tais arquivos podem ser: arquivo de redefinição, variáveis, cores, fontes, tamanhos de fonte, etc. 
+            </p>
+
+            <h5>Sass Importando Arquivos</h5>
+
+           <p>
+                Assim como o CSS, o Sass também oferece suporte à @import diretiva. A @importdiretiva permite incluir o conteúdo de um arquivo em outro. <br> <br>
+
+                A @importdiretiva CSS tem uma grande desvantagem devido a problemas de desempenho; ele cria uma solicitação HTTP extra cada vez que você o chama. No entanto, a @import diretiva Sass inclui o arquivo no CSS; portanto, nenhuma chamada HTTP extra é necessária no tempo de execução!
+            </p> 
+
+            <p>
+                OBS: Você não precisa especificar uma extensão de arquivo, o Sass assume automaticamente que você se refere a um arquivo .sass ou .scss. Você também pode importar arquivos CSS. A @import diretiva importa o arquivo e quaisquer variáveis ​​ou mixins definidos no arquivo importado podem então ser usados ​​no arquivo principal. <br> <br>
+
+                Você pode importar quantos arquivos precisar no arquivo principal, como exemplo: <br> <br>
+
+                @import "variables";<br>
+                @import "colors";<br>
+                @import "reset";
+            </p>
+
+            <h5>Sass Partials</h5>
+
+            <p>
+                Por padrão, o Sass transpila todos os arquivos .scss diretamente. No entanto, quando você deseja importar um arquivo, não precisa que o arquivo seja transpilado diretamente. <br> <br>
+
+                O Sass tem um mecanismo para isso: se você iniciar o nome do arquivo com um sublinhado, o Sass não o transpilará. Os arquivos nomeados dessa forma são chamados de parciais no Sass. <br> <br>
+                
+                Portanto, um arquivo Sass parcial é nomeado com um sublinhado inicial, Sintaxe parcial do Sass:  _filename.
+            </p>
+        </div>
+
+        <div class="col-sm-6">
+            <h2>Sass @mixin e @include</h2>
+
+            <h5>Sass Mixins</h5>
+                <p>
+                    A @mixin diretiva permite criar código CSS que deve ser reutilizado em todo o site. 
+                </p> 
+
+                <p>
+                    A @include diretiva é criada para permitir que você use (inclua) o mixin.
+                </p>
+
+                <p>Sass @mixin Sintaxe:</p> <br>
+                    <img style="padding-top: 10px;" src="img/Sass_@mixin_Sintax.PNG" alt="">
+
+                <p>
+                    O exemplo a seguir cria um mixin chamado "important-text", Sintaxe SCSS:
+
+                    <img style="padding-top: 10px;" src="img/Sintaxe_SCSS.PNG" alt="">
+                </p>
+
+                <p>
+                    Dica: uma dica sobre hifens e sublinhados no Sass: hifens e sublinhados são considerados iguais. Isso significa que @mixin important-text {} e @mixin important_text {} são considerados o mesmo mixin!
+                </p>
+
+                <h5>Usando um Mixin</h5>
+                <p>
+                    A @include diretiva é usada para incluir um mixin.Sass @include mixin Sintaxe:
+                </p>
+ 
+        </div>
+    </div>
+</div>
+
+<div class="mt-5 p-4 bg-dark text-white text-center">
+<footer>footer</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
